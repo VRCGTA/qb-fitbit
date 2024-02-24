@@ -1,10 +1,15 @@
 fx_version 'cerulean'
 game 'gta5'
-
-description 'QB-FitBit'
+lua54 'yes'
+author 'Kakarot'
+description 'Functional item that allows players to track their hunger and thirst'
 version '1.2.0'
 
 ui_page 'html/index.html'
+
+files {
+    'html/*'
+}
 
 shared_scripts {
     '@qb-core/shared/locale.lua',
@@ -14,7 +19,3 @@ shared_scripts {
 
 server_script 'server/main.lua'
 client_script 'client/main.lua'
-
-files {
-    'html/*'
-}
